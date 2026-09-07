@@ -2,8 +2,6 @@
 
 # Warranty Tracker
 
-### A digital care shelf for the things you own
-
 Keep warranties, maintenance, recalls, receipts, and replacement parts connected to the products they belong to.
 
 </div>
