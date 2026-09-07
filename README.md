@@ -1,10 +1,11 @@
 <div align="center">
 
 # Warranty Tracker
+</div>
+
 
 Keep warranties, maintenance, recalls, receipts, and replacement parts connected to the products they belong to.
 
-</div>
 
 ## About
 
