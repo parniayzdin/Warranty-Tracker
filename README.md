@@ -1,7 +1,7 @@
 <div align="center">
-## Warranty Tracker
-  
+  <h1>Warranty Tracker</h1>
 </div>
+
 
 ## About
 
