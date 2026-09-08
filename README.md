@@ -1,6 +1,9 @@
 <div align="center">
   <h1>Warranty Tracker</h1>
 </div>
+
+
+
 ## About
 
 Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up.
