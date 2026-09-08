@@ -1,5 +1,5 @@
 <div align="center">
-  <big><big><big><big><big><big><b>Warranty Tracker</b><big><big><big></big></big></big>
+  <big><big><big><big><big><big><big><big><big><b>Warranty Tracker</b><big><big><big></big></big></big><big><big><big>
 </div>
 
 <br>
