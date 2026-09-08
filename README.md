@@ -1,6 +1,6 @@
 <h1>
   Warranty Tracker
-  <img src="docs/warranty-tracker-logo.png" alt="Warranty Tracker logo" width="300" align="right">
+  <img src="docs/warranty-tracker-logo.png" alt="Warranty Tracker logo" width="200" align="right">
 </h1>
 ## About
 
