@@ -1,8 +1,4 @@
-<div align="center">
-  <big><big><big><big><big><big><big><big><big><b>Warranty Tracker</b><big><big><big></big></big></big><big><big><big>
-</div>
-
-<br>
+<h1 align="center">Warranty Tracker</h1>
 
 <b>About</b>
 
