@@ -10,4 +10,4 @@ frontend/dist/
 frontend/test-results/
 frontend/playwright-report/
 *.log
-
+frontend/*.tsbuildinfo
