@@ -16,14 +16,6 @@ Warranty Tracker is a full stack home asset management project inspired by how d
 
 **Recalls and parts**  Product recall information and useful replacement part links
 
-## Built with
-
-Java 21 · Spring Boot · Spring Data JPA · PostgreSQL · Maven · React · TypeScript · Vite · Docker · GitHub Actions
-
-## Project focus
-
-The backend follows a clear Controller → Service → Repository → PostgreSQL flow, with validation, API error handling, automated tests, and defect tracking through GitHub Issues.
-
 ## Run with Docker
 
 1. Install and start Docker Desktop.
