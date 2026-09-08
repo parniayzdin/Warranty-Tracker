@@ -7,9 +7,9 @@ Keep warranties, maintenance, recalls, receipts, and replacement parts connected
 
 ## About
 
-Warranty Tracker is a full stack home asset management project designed around one simple idea: your belongings should be easier to care for.
+Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up.
 
-Instead of keeping receipts, warranty dates, maintenance notes, and recall information in different places, the application keeps everything organized around each asset.
+After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
 
 ## What it tracks
 
