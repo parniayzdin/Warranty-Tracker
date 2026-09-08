@@ -1,4 +1,3 @@
- <h1>Warranty Tracker</h1>
 <h1>
   Warranty Tracker
   <img src="docs/warranty-tracker-logo.png" alt="Warranty Tracker logo" width="70" align="right">
