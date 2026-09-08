@@ -19,6 +19,7 @@ public class DashboardService {
         this.assets = assets; this.warranties = warranties; this.maintenance = maintenance; this.recalls = recalls;
     }
     public record Reminder(String type, Long id, Asset asset, String title, LocalDate dueDate, String status) {}
+    public void checkDatabase() { assets.count(); }
     public record Dashboard(long assetCount, long protectedCount, long maintenanceCount, long recallCount,
                             Map<String, Long> categories, List<Asset> recentAssets, List<Reminder> reminders, List<Recall> recalls) {}
     public List<Reminder> reminders() {
@@ -42,4 +43,3 @@ public class DashboardService {
                 all.stream().sorted(Comparator.comparing(Asset::getId).reversed()).limit(4).toList(), reminders, open);
     }
 }
-

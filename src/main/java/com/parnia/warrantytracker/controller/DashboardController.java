@@ -14,6 +14,5 @@ public class DashboardController {
     @GetMapping("/reminders")
     public List<DashboardService.Reminder> reminders() { return service.reminders(); }
     @GetMapping("/health")
-    public Map<String, String> health() { service.dashboard(); return Map.of("status", "Ready"); }
+    public Map<String, String> health() { service.checkDatabase(); return Map.of("status", "Ready"); }
 }
-
