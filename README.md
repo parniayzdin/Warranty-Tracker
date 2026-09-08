@@ -1,37 +1,74 @@
-<h1 align="center">Warranty Tracker</h1>
+<div align="center">
+# Warranty Tracker
+</div>
 
-<b>About</b>
+## About
 
-Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up. After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
+Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up.
 
-<b>What it tracks</b>
+After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
 
-- Assets such as appliances, electronics, vehicles, baby products, and home equipment
-- Warranties, coverage dates, status, and receipts
-- Maintenance tasks and recurring care schedules
-- Recall notices, replacement parts, and reminders
+## What it tracks
 
-<b>Built with</b>
+**Assets**  Appliances, electronics, vehicles, baby products, and home equipment
 
-Java 21 · Spring Boot · Spring Data JPA · PostgreSQL · React · TypeScript · Vite · Docker · GitHub Actions
+**Warranties**  Providers, coverage dates, status, and receipts
 
-<b>Run with Docker</b>
+**Maintenance**  Upcoming tasks, last completion date, and recurring care schedules
 
-Copy `.env.example` to `.env`, choose your local database password, then run:
+**Recalls and parts**  Product recall information and useful replacement part links
+
+## Built with
+
+Java 21 · Spring Boot · Spring Data JPA · PostgreSQL · Maven · React · TypeScript · Vite · Docker · GitHub Actions
+
+## Project focus
+
+The backend follows a clear Controller → Service → Repository → PostgreSQL flow, with validation, API error handling, automated tests, and defect tracking through GitHub Issues.
+
+## Run with Docker
+
+1. Install and start Docker Desktop.
+2. Copy `.env.example` to `.env` and choose your database password.
+3. Build and start the complete application:
 
 ```sh
-docker compose up --build
+docker compose build
+docker compose up
 ```
 
-Open `http://localhost:3000` after the containers are running.
+Open [Warranty Tracker](http://localhost:3000). The frontend runs in Nginx and forwards API requests to Spring Boot. PostgreSQL data and receipt files persist in the database volume.
 
-<b>Local development</b>
+The backend is available at [API health](http://localhost:8080/api/health). Change `WEB_PORT`, `API_PORT`, or `APP_TIMEZONE` in `.env` when needed. Keep the application timezone aligned with your browser timezone for calendar dates.
 
-Run the Spring Boot backend on port `8080`, then from the `frontend` directory run:
+Use `docker compose down` to stop the application while keeping its data. This personal app binds to your own computer and has no account system.
+
+## Explore the app
+
+Start with your own item, or choose **Explore sample home** from an empty overview. Sample items are clearly labelled and can be edited or deleted.
+
+Choose an illustrated category, name your item, then add optional purchase and location details. Each item has tabs for warranties, care tasks, recall notices and replacement parts.
+
+Warranty status follows the coverage dates. Receipts support PDF, PNG and JPEG up to 5 MB. Maintenance completion records today's date and schedules the next occurrence from today. A task with no interval completes once. Repeating tasks can be completed once per calendar day.
+
+The care calendar shows maintenance due within 30 days, overdue tasks and warranty reminders within their chosen notice period. Calendar export creates a snapshot for importing into your calendar. Reminders appear inside the app; email and background notifications are not configured.
+
+Recall lookup uses [CPSC consumer product records](https://www.cpsc.gov/Data) or [NHTSA vehicle records](https://www.nhtsa.gov/nhtsa-datasets-and-apis). Vehicle lookup needs a model year. Results are potential matches from US sources, not a guarantee of coverage or an exact serial number match. Source failures are shown separately from empty results. Confirm any notice with the manufacturer, then save and resolve it in the tracker.
+
+Part lookup opens manufacturer and model specific web searches. Save useful supplier links and part numbers after confirming compatibility.
+
+## Local development
+
+Use Java 21 or newer, Node.js 22.12 or newer, and PostgreSQL. Create a database named `warrantytracker`. Set `DB_URL`, `DB_USERNAME` and `DB_PASSWORD` in the terminal environment. Maven does not load the Docker `.env` file automatically.
+
+Start Spring Boot with the Maven wrapper goal `spring-boot:run`. On Windows the wrapper is `mvnw.cmd`; on other systems use `bash mvnw`.
+
+In the `frontend` directory:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open `http://localhost:5173` in your browser while the Vite development server is running.
+Open [Development preview](http://localhost:5173). Vite forwards API requests to port 8080. Set `API_URL` to use a different backend address.
+
