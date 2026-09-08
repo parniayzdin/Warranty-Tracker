@@ -12,6 +12,8 @@ Warranty Tracker is a full stack home asset management project inspired by how d
   What it tracks
 </h2>
 
+
+
 **Assets**  Appliances, electronics, vehicles, baby products, and home equipment
 
 **Warranties**  Providers, coverage dates, status, and receipts
