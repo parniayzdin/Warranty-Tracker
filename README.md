@@ -1,6 +1,7 @@
  <h1>Warranty Tracker</h1>
-<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/15fd40a0-2b59-4e92-9a13-d040b1b903d1" />
-
+<p align="center">
+  <img src="docs/warranty-tracker-logo.png" alt="Warranty Tracker logo" width="260">
+</p>
 ## About
 
 Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up. After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
