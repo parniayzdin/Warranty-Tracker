@@ -1,5 +1,5 @@
 <div align="center">
-# Warranty Tracker
+## Warranty Tracker
   
 </div>
 
