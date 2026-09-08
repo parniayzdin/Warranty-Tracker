@@ -75,30 +75,3 @@ npm run dev
 
 Open [Development preview](http://localhost:5173). Vite forwards API requests to port 8080. Set `API_URL` to use a different backend address.
 
-## Tests
-
-Create a separate PostgreSQL database named `warrantytracker_test`. Point both `DB_URL` and `TEST_DB_URL` at that database. Set `DB_USERNAME`, `DB_PASSWORD`, `TEST_DB_USERNAME` and `TEST_DB_PASSWORD`, then run the Maven wrapper with the `test` goal.
-
-The backend suite covers CRUD, validation, missing records, ownership checks, receipt storage, warranty date boundaries, maintenance completion, dashboard data and recall source failures.
-
-With the Docker app running, execute these commands in `frontend`:
-
-```sh
-npm ci
-npx playwright install chromium
-npm test
-```
-
-Browser tests use port 3000 by default. Set `APP_URL` to another running instance if needed. They create and remove their own sample records. Use a separate test instance. Coverage includes asset creation and editing, receipts, maintenance, calendar export, recalls, parts, mobile layout and error recovery.
-
-## API map
-
-Assets use `/api/assets`. Individual items use `/api/assets/{id}`.
-
-Warranties, maintenance, recalls and parts use `/api/assets/{assetId}/{resource}` for listing and creation, with `/{id}` for reading, updating and deletion.
-
-Maintenance completion uses POST to `/api/assets/{assetId}/maintenance/{id}/complete`. Receipt upload, download and removal use `/api/assets/{assetId}/warranties/{id}/receipt`.
-
-Recall and part lookup use the corresponding resource path followed by `/lookup`. The overview and calendar use `/api/dashboard` and `/api/reminders`.
-
-The existing Hibernate schema update approach is retained to keep local setup simple. Back up the database before future schema changes.
