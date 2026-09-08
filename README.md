@@ -8,8 +8,8 @@
 Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up. After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
 
 <h2>
+  <img src="docs/stickers/bear.svg" alt="Bear sticker" width="68" align="left">
   What it tracks
-  <img src="docs/stickers/check-badge.svg" alt="Check badge sticker" width="54" align="right">
 </h2>
 
 **Assets**  Appliances, electronics, vehicles, baby products, and home equipment
@@ -22,7 +22,7 @@ Warranty Tracker is a full stack home asset management project inspired by how d
 
 <h2>
   Run with Docker
-  <img src="docs/stickers/toolbox.svg" alt="Toolbox sticker" width="62" align="right">
+  <img src="docs/stickers/toolbox.svg" alt="Toolbox sticker" width="66" align="right">
 </h2>
 
 1. Install and start Docker Desktop.
@@ -41,8 +41,8 @@ The backend is available at [API health](http://localhost:8080/api/health). Chan
 Use `docker compose down` to stop the application while keeping its data. This personal app binds to your own computer and has no account system.
 
 <h2>
+  <img src="docs/stickers/smiley-note.svg" alt="Smiling note sticker" width="56" align="left">
   Explore the app
-  <img src="docs/stickers/smiley-note.svg" alt="Smiling note sticker" width="52" align="right">
 </h2>
 
 Start with your own item, or choose **Explore sample home** from an empty overview. Sample items are clearly labelled and can be edited or deleted. Choose an illustrated category, name your item, then add optional purchase and location details. Each item has tabs for warranties, care tasks, recall notices and replacement parts. Warranty status follows the coverage dates. Receipts support PDF, PNG and JPEG up to 5 MB. Maintenance completion records today's date and schedules the next occurrence from today. A task with no interval completes once. Repeating tasks can be completed once per calendar day.
