@@ -2,11 +2,15 @@
   Warranty Tracker
   <img src="docs/warranty-tracker-logo.png" alt="Warranty Tracker logo" width="200" align="right">
 </h1>
+
 ## About
 
 Warranty Tracker is a full stack home asset management project inspired by how difficult it can be to keep track of everything you own once warranties, receipts, maintenance, and recall information start piling up. After seeing how scattered and inconvenient that process can be, I wanted to build one place where each asset can have its warranty details, maintenance history, receipts, recalls, replacement parts, and reminders organized together.
 
-## What it tracks
+<h2>
+  What it tracks
+  <img src="docs/stickers/check-badge.svg" alt="Check badge sticker" width="54" align="right">
+</h2>
 
 **Assets**  Appliances, electronics, vehicles, baby products, and home equipment
 
@@ -16,7 +20,10 @@ Warranty Tracker is a full stack home asset management project inspired by how d
 
 **Recalls and parts**  Product recall information and useful replacement part links
 
-## Run with Docker
+<h2>
+  Run with Docker
+  <img src="docs/stickers/toolbox.svg" alt="Toolbox sticker" width="62" align="right">
+</h2>
 
 1. Install and start Docker Desktop.
 2. Copy `.env.example` to `.env` and choose your database password.
@@ -33,9 +40,13 @@ The backend is available at [API health](http://localhost:8080/api/health). Chan
 
 Use `docker compose down` to stop the application while keeping its data. This personal app binds to your own computer and has no account system.
 
-## Explore the app
+<h2>
+  Explore the app
+  <img src="docs/stickers/smiley-note.svg" alt="Smiling note sticker" width="52" align="right">
+</h2>
 
 Start with your own item, or choose **Explore sample home** from an empty overview. Sample items are clearly labelled and can be edited or deleted. Choose an illustrated category, name your item, then add optional purchase and location details. Each item has tabs for warranties, care tasks, recall notices and replacement parts. Warranty status follows the coverage dates. Receipts support PDF, PNG and JPEG up to 5 MB. Maintenance completion records today's date and schedules the next occurrence from today. A task with no interval completes once. Repeating tasks can be completed once per calendar day.
+
 The care calendar shows maintenance due within 30 days, overdue tasks and warranty reminders within their chosen notice period. Calendar export creates a snapshot for importing into your calendar. Reminders appear inside the app; email and background notifications are not configured. Recall lookup uses [CPSC consumer product records](https://www.cpsc.gov/Data) or [NHTSA vehicle records](https://www.nhtsa.gov/nhtsa-datasets-and-apis). Vehicle lookup needs a model year. Results are potential matches from US sources, not a guarantee of coverage or an exact serial number match. Source failures are shown separately from empty results. Confirm any notice with the manufacturer, then save and resolve it in the tracker.
 
 ## Local development
@@ -52,4 +63,3 @@ npm run dev
 ```
 
 Open [Development preview](http://localhost:5173). Vite forwards API requests to port 8080. Set `API_URL` to use a different backend address.
-
