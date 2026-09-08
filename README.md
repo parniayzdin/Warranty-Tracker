@@ -41,17 +41,8 @@ Use `docker compose down` to stop the application while keeping its data. This p
 
 ## Explore the app
 
-Start with your own item, or choose **Explore sample home** from an empty overview. Sample items are clearly labelled and can be edited or deleted.
-
-Choose an illustrated category, name your item, then add optional purchase and location details. Each item has tabs for warranties, care tasks, recall notices and replacement parts.
-
-Warranty status follows the coverage dates. Receipts support PDF, PNG and JPEG up to 5 MB. Maintenance completion records today's date and schedules the next occurrence from today. A task with no interval completes once. Repeating tasks can be completed once per calendar day.
-
-The care calendar shows maintenance due within 30 days, overdue tasks and warranty reminders within their chosen notice period. Calendar export creates a snapshot for importing into your calendar. Reminders appear inside the app; email and background notifications are not configured.
-
-Recall lookup uses [CPSC consumer product records](https://www.cpsc.gov/Data) or [NHTSA vehicle records](https://www.nhtsa.gov/nhtsa-datasets-and-apis). Vehicle lookup needs a model year. Results are potential matches from US sources, not a guarantee of coverage or an exact serial number match. Source failures are shown separately from empty results. Confirm any notice with the manufacturer, then save and resolve it in the tracker.
-
-Part lookup opens manufacturer and model specific web searches. Save useful supplier links and part numbers after confirming compatibility.
+Start with your own item, or choose **Explore sample home** from an empty overview. Sample items are clearly labelled and can be edited or deleted. Choose an illustrated category, name your item, then add optional purchase and location details. Each item has tabs for warranties, care tasks, recall notices and replacement parts. Warranty status follows the coverage dates. Receipts support PDF, PNG and JPEG up to 5 MB. Maintenance completion records today's date and schedules the next occurrence from today. A task with no interval completes once. Repeating tasks can be completed once per calendar day.
+The care calendar shows maintenance due within 30 days, overdue tasks and warranty reminders within their chosen notice period. Calendar export creates a snapshot for importing into your calendar. Reminders appear inside the app; email and background notifications are not configured. Recall lookup uses [CPSC consumer product records](https://www.cpsc.gov/Data) or [NHTSA vehicle records](https://www.nhtsa.gov/nhtsa-datasets-and-apis). Vehicle lookup needs a model year. Results are potential matches from US sources, not a guarantee of coverage or an exact serial number match. Source failures are shown separately from empty results. Confirm any notice with the manufacturer, then save and resolve it in the tracker.
 
 ## Local development
 
