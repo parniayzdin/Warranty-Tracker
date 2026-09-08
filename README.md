@@ -1,4 +1,5 @@
  <h1>Warranty Tracker</h1>
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/15fd40a0-2b59-4e92-9a13-d040b1b903d1" />
 
 ## About
 
