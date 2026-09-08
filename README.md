@@ -1,7 +1,10 @@
 <div align="center">
-  <h1>Warranty Tracker</h1>
+  <strong style="font-size: 28px;">Warranty Tracker</strong>
 </div>
 
+<br>
+
+<strong>About</strong>
 
 ## About
 
