@@ -1,6 +1,5 @@
 <div align="center">
-  <b>Warranty Tracker</b><br>
-  <sub>A full stack care hub for the things you own.</sub>
+  <big><big><big><b>Warranty Tracker</b></big></big></big>
 </div>
 
 <br>
