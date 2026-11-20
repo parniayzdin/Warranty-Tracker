@@ -146,10 +146,10 @@ test('part lookup includes manufacturer and model and supports saved parts', asy
 test('mobile navigation and asset builder fit the screen', async ({page}) => {
   await page.setViewportSize({width:390,height:844});
   await page.goto('/');
-  await expect(page.getByRole('heading',{name:'Your things. In good hands.'})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'Overview'})).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.getByRole('link',{name:'My things',exact:true}).click();
-  await expect(page.getByRole('heading',{name:'Meet the home team.'})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'My things'})).toBeVisible();
   await page.getByRole('button',{name:'Add asset',exact:true}).click();
   await expect(page.getByRole('dialog')).toBeVisible();
   expect(await page.getByRole('dialog').evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true);
